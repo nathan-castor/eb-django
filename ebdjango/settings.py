@@ -25,7 +25,7 @@ SECRET_KEY = '8*6=9q@sih4d=x!-!8%ql3#o=^2!p2e9(#uarmsfhxsgml@-$b'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['django-env.kajmnudamd.us-west-2.elasticbeanstalk.com']
+ALLOWED_HOSTS = ['django-env.kajmnudamd.us-west-2.elasticbeanstalk.com','http://127.0.0.1:8000/','127.0.0.1']
 
 
 # Application definition
@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'boards'
 ]
 
 MIDDLEWARE_CLASSES = [
