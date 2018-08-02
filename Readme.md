@@ -33,17 +33,14 @@ Testing
 
     $ python manage.py test
 
-Running tests with py.test
---------------------------
-
-    $ py.test
-
+To see more detail about the test execution, set the verbosity to a higher level:
+---------------------------------------------------------------------------------
+    $ python manage.py test --verbosity=2
 
 Scheduled Tasks
 ---------------
 
 This app uses CloudWatch to trigger events for Lambda functions that hit the primary API endpoints.
-
 
 
 Deployment
