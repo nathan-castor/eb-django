@@ -11,6 +11,12 @@ def home(request):
             'description' : 'General discussion about Python.'
         }
     )
+    board, created = Board.objects.update_or_create(
+        name='Django',
+        defaults = {
+            'description' : 'Lovely discussion about Django.'
+        }
+    )
 
     boards = Board.objects.all()
     boards_names = list()
