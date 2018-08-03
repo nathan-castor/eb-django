@@ -77,3 +77,8 @@ The following details how to deploy this application.
 1. git push branch
 2. pull request
 3. with approval code deploys to AWS Beanstalk Via CodePipeline
+
+
+Next Steps
+----------
+* Zappa serverless deployment of this web app
