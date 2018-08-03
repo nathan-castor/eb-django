@@ -27,14 +27,22 @@ Will be moved to myproject/settings/. But currently normal settings file.
 
 Basic Commands
 --------------
-coming soon...
+Getting into the Beanstalk Django Shell through SSH
+
+    $ eb ssh
+    $ passphrase: YOUR_PASSPHRASE
+    $ cd /opt/python/current/app
+    $ source ../env
+    $ python manage.py shell
+
+    >> (Prompt)
 
 Setting Up Your Users
 ---------------------
 
 * To create a **normal user account**, just go to Sign Up and fill out the form. Once you submit it, you'll be logged in and ready to go.
 
-* To create an **superuser account**, use this command::
+* To create a **superuser account**, use this command (once SSH'ed to Django instance)::
 
         $ python manage.py createsuperuser
 
