@@ -86,3 +86,5 @@ The following details how to deploy this application.
 Next Steps
 ----------
 * Zappa serverless deployment of this web app
+
+**Thanks for checking my portfolio out!**
