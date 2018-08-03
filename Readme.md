@@ -10,15 +10,21 @@ Goals:
     * RDS
     * DynamoDB
 * Add usefull apps to the portfolio to showcase my skills
-    * Add Metabase example
+    * Add Metabase (an open source data visualization tool) example
+    * Serverless App (via AWS API-Gateway, Lambda, Cognito etc.)
 
 Virtual Environment
 -----------------
-    $ pipenv shell
     $ pipenv install
-You might also need to install Django seperately. Installs inside the shell can use regular pip. Otherwise use pipenv:
+    $ pipenv shell
 
-    $ pipenv install django
+In the shell install django. (All other packages can be added outside the shell with pipenv or inside the shell with pip).
+
+    $ pip install django
+
+Following installations I would recommend running pip freeze > requirements.txt
+
+    $ pip freeze > requirements.txt
 
 Settings
 --------
@@ -49,6 +55,7 @@ Setting Up Your Users
 
 Testing
 --------------
+In the shell
 
     $ python manage.py test
 

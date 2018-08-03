@@ -41,7 +41,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'boards'
+    'widget_tweaks',
+
+    'boards',
 ]
 
 MIDDLEWARE_CLASSES = [
