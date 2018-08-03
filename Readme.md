@@ -1,6 +1,17 @@
 eb-django
 =========
 
+Goals:
+------
+* Make a decent portfolio site that explains my skill set
+    * host on AWS Beanstalk
+    * deploy with CodePipeline for CI/CD
+* Use Different AWS Data Sources
+    * RDS
+    * DynamoDB
+* Add usefull apps to the portfolio to showcase my skills
+    * Add Metabase example
+
 Virtual Environment
 -----------------
     $ pipenv shell
@@ -48,12 +59,6 @@ Deployment
 
 The following details how to deploy this application.
 
-
-AWS Beanstalk Via CodePipeline
-^^^^^^
-
-
-
-
-
-
+1. git push branch
+2. pull request
+3. with approval code deploys to AWS Beanstalk Via CodePipeline
