@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block breadcrumb %}
+    <div class="container">
+        <a href="https://www.linkedin.com/in/nathancastor/" rel="nofollow noopener" target="_blank">
+            <img class="rounded mx-auto d-block" src="{% static 'img/unicorn_logo.png' %}" alt="Unicorn Logo" style="height: 300px;">
+        </a>
+    </div>
+
+{% endblock %}
+
+{% block content %}
+  <table class="table">
+    <thead class="thead-inverse">
+      <tr>
+        <th>About Serverless:</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+  <p>I really like what AWS is doing with Serverless applications and Microservices, so I put together a basic app via the AWS tutorial. Click on the image above to check it out!</p>
+{% endblock %}

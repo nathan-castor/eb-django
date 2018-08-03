@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block breadcrumb %}
+    <div class="container">
+        <a href="https://www.linkedin.com/in/nathancastor/" rel="nofollow noopener" target="_blank">
+            <img class="rounded mx-auto d-block" src="{% static 'img/new_bitmoji.png' %}" alt="Nate Bitmoji" style="height: 300px;">
+        </a>
+    </div>
+
+{% endblock %}
+
+{% block content %}
+  <table class="table">
+    <thead class="thead-inverse">
+      <tr>
+        <th>About Me:</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+
+  <p>Hey there! Welcome to my portfolio site. This is definitely at the "work in progress" stage, so keep that in mind!</p>
+  <h3>A little about me:</h3>
+  <p>I have a passion for learning all things related to being a full stack python programmer. I have been steering towards data science, but I really like being realiable for any aspect of a python project or feature.</p>
+  <h3>Some things to know about this site:</h3>
+  <p>This site is hosted on AWS Elastic Beanstalk</p>
+  <p>This puppy is connected to an RDS postgres database because it works well with Django and Postgres is awesome!</p>
+  <p>If you're interested in contributing feel free to fork the repo. When your pull requests are approved the site will automatically deploy via CodePipeline for easy continuous intigration deployments. (I hope you like my buzzwords).</p>
+{% endblock %}
