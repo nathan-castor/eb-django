@@ -1,6 +1,10 @@
 eb-django
 =========
 
+Currently Found At:
+-------------------
+http://eb-django.us-west-2.elasticbeanstalk.com/
+
 Goals:
 ------
 * Make a decent portfolio site that explains my skill set

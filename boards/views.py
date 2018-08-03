@@ -1,7 +1,7 @@
 # from django.shortcuts import render
 
 # # Create your views here.
-# from django.http import HttpResponse
+from django.http import HttpResponse
 # # from .models import Board
 # # from django.shortcuts import render, get_object_or_404
 # # from django.http import Http404
@@ -13,6 +13,13 @@ from django.contrib.auth.models import User
 from django.shortcuts import render, redirect, get_object_or_404
 from .forms import NewTopicForm
 from .models import Board, Topic, Post
+
+def index(request):
+    return render(request, 'index.html', {'message':'success'})
+def serverless(request):
+    return render(request, 'serverless.html', {'message':'success'})
+def metabase(request):
+    return render(request, 'metabase.html', {'message':'success'})
 
 def home(request):
     board, created = Board.objects.update_or_create(
