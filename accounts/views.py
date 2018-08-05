@@ -17,7 +17,7 @@ def signup(request):
             # password = user.password
             # user = authenticate(username=username, password=password)
 
-            user.backend = 'django.core.cache.backends.filebased.FileBasedCache'
+            # user.backend = 'django.core.cache.backends.filebased.FileBasedCache'
 
             login(request, user)
             return redirect('index')
