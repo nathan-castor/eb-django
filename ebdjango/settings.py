@@ -78,7 +78,12 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'ebdjango.wsgi.application'
-
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
+        'LOCATION': '/var/tmp/django_cache',
+    }
+}
 
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
