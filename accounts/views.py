@@ -3,6 +3,9 @@ from django.shortcuts import render, redirect
 
 from .forms import SignUpForm
 
+from django.contrib.auth import logout
+
+
 def signup(request):
     if request.method == 'POST':
         form = SignUpForm(request.POST)
@@ -17,7 +20,8 @@ def signup(request):
             user.backend = 'django.core.cache.backends.filebased.FileBasedCache'
 
             login(request, user)
-            return redirect('home')
+            return redirect('index')
     else:
         form = SignUpForm()
     return render(request, 'signup.html', {'form': form})
+
