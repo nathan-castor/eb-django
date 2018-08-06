@@ -24,7 +24,7 @@ Virtual Environment
 
 In the shell install django. (All other packages can be added outside the shell with pipenv or inside the shell with pip).
 
-    $ pip install django
+    $ pip install django==1.11.4
 
 Following installations I would recommend running pip freeze > requirements.txt
 
