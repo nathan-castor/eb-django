@@ -2,8 +2,12 @@ from django.core.urlresolvers import reverse
 from django.core.urlresolvers import resolve
 # from django.urls import resolve
 from django.test import TestCase
-from .views import home, board_topics
-from .models import Board
+# from .views import home, board_topics
+# from .models import Board
+
+from ..views import home, board_topics, new_topic
+from ..models import Board, Topic, Post
+from ..forms import NewTopicForm
 
 
 class HomeTests(TestCase):
