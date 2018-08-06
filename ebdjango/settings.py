@@ -161,3 +161,5 @@ CACHES = {
 LOGOUT_REDIRECT_URL = 'index'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+LOGIN_URL = 'login'
